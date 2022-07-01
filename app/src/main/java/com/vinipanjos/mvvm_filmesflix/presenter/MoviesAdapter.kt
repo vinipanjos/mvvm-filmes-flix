@@ -1,11 +1,11 @@
-package com.vinipanjos.mvvm_filmesflix.view
+package com.vinipanjos.mvvm_filmesflix.presenter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.vinipanjos.mvvm_filmesflix.databinding.MovieItemBinding
-import com.vinipanjos.mvvm_filmesflix.model.Movie
+import com.vinipanjos.mvvm_filmesflix.domain.Movie
 
 class MoviesAdapter(private val movieList: List<Movie>) :
     RecyclerView.Adapter<MoviesAdapter.ViewHolder>() {

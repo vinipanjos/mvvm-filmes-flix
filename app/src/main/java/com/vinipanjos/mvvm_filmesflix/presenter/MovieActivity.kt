@@ -1,16 +1,13 @@
-package com.vinipanjos.mvvm_filmesflix.view
+package com.vinipanjos.mvvm_filmesflix.presenter
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.lifecycle.LifecycleObserver
-import androidx.lifecycle.LifecycleOwner
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.vinipanjos.mvvm_filmesflix.databinding.ActivityMainBinding
-import com.vinipanjos.mvvm_filmesflix.model.Movie
-import com.vinipanjos.mvvm_filmesflix.viewmodel.MovieListViewModel
+import com.vinipanjos.mvvm_filmesflix.domain.Movie
+import com.vinipanjos.mvvm_filmesflix.framework.api.viewmodel.MovieListViewModel
 
 class MovieActivity : AppCompatActivity() {
     private lateinit var movieListViewModel: MovieListViewModel

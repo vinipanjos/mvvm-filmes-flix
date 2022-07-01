@@ -1,4 +1,4 @@
-package com.vinipanjos.mvvm_filmesflix.model
+package com.vinipanjos.mvvm_filmesflix.domain
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName

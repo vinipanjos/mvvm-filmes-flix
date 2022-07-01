@@ -1,6 +1,6 @@
-package com.vinipanjos.mvvm_filmesflix.api
+package com.vinipanjos.mvvm_filmesflix.framework.api
 
-import com.vinipanjos.mvvm_filmesflix.model.Movie
+import com.vinipanjos.mvvm_filmesflix.domain.Movie
 import retrofit2.Call
 import retrofit2.http.GET
 
