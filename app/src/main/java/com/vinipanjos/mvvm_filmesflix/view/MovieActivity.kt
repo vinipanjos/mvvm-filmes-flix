@@ -2,6 +2,7 @@ package com.vinipanjos.mvvm_filmesflix.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.Observer
@@ -24,18 +25,26 @@ class MovieActivity : AppCompatActivity() {
 
         movieListViewModel = ViewModelProvider.NewInstanceFactory().create(MovieListViewModel::class.java)
         movieListViewModel.init()
-
         initObserver()
+        loadingVisibility(true)
     }
 
     private fun initObserver(){
         movieListViewModel.moviesList.observe(this) {
-            populateList(it)
+            if (it.isNotEmpty()){
+                populateList(it)
+                loadingVisibility(false)
+            }
+
         }
     }
     private fun populateList(list: List<Movie>){
         binding.rvMovies.hasFixedSize()
         binding.rvMovies.adapter = MoviesAdapter(list)
 
+    }
+
+    private fun loadingVisibility(isLoading: Boolean){
+        binding.progressBar.visibility = if (isLoading)View.VISIBLE else View.GONE
     }
 }
