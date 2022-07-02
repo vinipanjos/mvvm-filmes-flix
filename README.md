@@ -11,6 +11,9 @@ Um projeto utilizando conceitos MVVM.
   - [Visão geral do LiveData](https://developer.android.com/topic/libraries/architecture/livedata)
   - [Visão geral do ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)
   - [Retrofit](https://github.com/square/retrofit)
+  - [Github Natan Felipe](https://github.com/natanfelipe/FilmesFlix#readme)
+  - [Guia para a arquitetura do app](https://developer.android.com/jetpack/guide?hl=pt-br)
+  - [Modern Android App Architecture](https://developer.android.com/courses/pathways/android-architecture)
   
 
 
