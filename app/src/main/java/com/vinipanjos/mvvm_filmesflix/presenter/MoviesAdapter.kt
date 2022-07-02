@@ -1,5 +1,6 @@
 package com.vinipanjos.mvvm_filmesflix.presenter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -21,6 +22,12 @@ class MoviesAdapter(private val movieList: List<Movie>) :
             Glide.with(binding.root.context)
                 .load(movie.imagem)
                 .into(binding.ivMovie)
+
+            binding.ivMovie.setOnClickListener {
+                val intent = Intent(binding.root.context, DetailActivity::class.java)
+                intent.putExtra(DetailActivity.Extras.MOVIE, movie)
+                binding.root.context.startActivity(intent)
+            }
 
         }
 
