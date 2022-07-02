@@ -14,6 +14,7 @@ Um projeto utilizando conceitos MVVM.
   - [Github Natan Felipe](https://github.com/natanfelipe/FilmesFlix#readme)
   - [Guia para a arquitetura do app](https://developer.android.com/jetpack/guide?hl=pt-br)
   - [Modern Android App Architecture](https://developer.android.com/courses/pathways/android-architecture)
+  - [Material Design](https://material.io/design/color/the-color-system.html)
   
 
 
