@@ -4,14 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presenter.MovieActivity">
+    tools:context=".presenter.MovieActivity"
+    android:background="@color/primary_700">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_movies"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/movie_item"
-        tools:itemCount="5"/>
+        tools:itemCount="5"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="-142dp"
+        tools:listitem="@layout/movie_item" />
+
     <ProgressBar
         android:id="@+id/progress_bar"
         android:layout_width="wrap_content"
